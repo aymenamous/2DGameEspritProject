@@ -1,0 +1,121 @@
+\hypertarget{var_8h}{\section{var.\-h File Reference}
+\label{var_8h}\index{var.\-h@{var.\-h}}
+}
+{\ttfamily \#include $<$S\-D\-L/\-S\-D\-L.\-h$>$}\\*
+{\ttfamily \#include $<$S\-D\-L/\-S\-D\-L\-\_\-image.\-h$>$}\\*
+{\ttfamily \#include $<$S\-D\-L/\-S\-D\-L\-\_\-mixer.\-h$>$}\\*
+{\ttfamily \#include $<$stdio.\-h$>$}\\*
+{\ttfamily \#include $<$stdlib.\-h$>$}\\*
+{\ttfamily \#include $<$math.\-h$>$}\\*
+{\ttfamily \#include $<$S\-D\-L/\-S\-D\-L\-\_\-ttf.\-h$>$}\\*
+{\ttfamily \#include $<$string.\-h$>$}\\*
+\subsection*{Data Structures}
+\begin{DoxyCompactItemize}
+\item 
+struct \hyperlink{structhero}{hero}
+\item 
+struct \hyperlink{structperso}{perso}
+\end{DoxyCompactItemize}
+\subsection*{Typedefs}
+\begin{DoxyCompactItemize}
+\item 
+typedef struct \hyperlink{structperso}{perso} \hyperlink{var_8h_a1c7a32a9b48d6f089882757a219edf09}{perso}
+\item 
+typedef struct \hyperlink{structhero}{hero} \hyperlink{var_8h_ab00d3f853a1dee57c09253477c55276e}{hero}
+\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{structhero}{hero} \hyperlink{var_8h_a8a0f25e5ce685539a3b4f39d45ea3eed}{Init\-\_\-raiden} (int lvl)
+\item 
+\hyperlink{structhero}{hero} \hyperlink{var_8h_a30eff78acfea6041ce6c43177d99d72e}{Init\-\_\-slendy} (int lvl)
+\item 
+\hyperlink{structperso}{perso} \hyperlink{var_8h_ab32bb852908b1e1e46183cf1cd7e2716}{Init\-\_\-archer} (int lvl, S\-D\-L\-\_\-\-Surface $\ast$archer\-\_\-img\mbox{[}4\mbox{]}, S\-D\-L\-\_\-\-Surface $\ast$barre, S\-D\-L\-\_\-\-Surface $\ast$vie, S\-D\-L\-\_\-\-Rect slot)
+\item 
+\hyperlink{structperso}{perso} \hyperlink{var_8h_ab75d9fcf4937fd0a4c51008db684a221}{Init\-\_\-war} (int lvl, S\-D\-L\-\_\-\-Surface $\ast$war\-\_\-img\mbox{[}9\mbox{]}, S\-D\-L\-\_\-\-Surface $\ast$barre, S\-D\-L\-\_\-\-Surface $\ast$vie, S\-D\-L\-\_\-\-Rect slot)
+\item 
+void \hyperlink{var_8h_aa7616c03021df93aa9796f4effc779fd}{free\-\_\-raiden} (\hyperlink{structhero}{hero} carac)
+\end{DoxyCompactItemize}
+
+
+\subsection{Typedef Documentation}
+\hypertarget{var_8h_ab00d3f853a1dee57c09253477c55276e}{\index{var.\-h@{var.\-h}!hero@{hero}}
+\index{hero@{hero}!var.h@{var.\-h}}
+\subsubsection[{hero}]{\setlength{\rightskip}{0pt plus 5cm}typedef struct {\bf hero} {\bf hero}}}\label{var_8h_ab00d3f853a1dee57c09253477c55276e}
+
+
+Definition at line 12 of file var.\-h.
+
+\hypertarget{var_8h_a1c7a32a9b48d6f089882757a219edf09}{\index{var.\-h@{var.\-h}!perso@{perso}}
+\index{perso@{perso}!var.h@{var.\-h}}
+\subsubsection[{perso}]{\setlength{\rightskip}{0pt plus 5cm}typedef struct {\bf perso} {\bf perso}}}\label{var_8h_a1c7a32a9b48d6f089882757a219edf09}
+
+
+Definition at line 11 of file var.\-h.
+
+
+
+\subsection{Function Documentation}
+\hypertarget{var_8h_aa7616c03021df93aa9796f4effc779fd}{\index{var.\-h@{var.\-h}!free\-\_\-raiden@{free\-\_\-raiden}}
+\index{free\-\_\-raiden@{free\-\_\-raiden}!var.h@{var.\-h}}
+\subsubsection[{free\-\_\-raiden}]{\setlength{\rightskip}{0pt plus 5cm}void free\-\_\-raiden (
+\begin{DoxyParamCaption}
+\item[{{\bf hero}}]{carac}
+\end{DoxyParamCaption}
+)}}\label{var_8h_aa7616c03021df93aa9796f4effc779fd}
+
+
+Definition at line 101 of file var.\-c.
+
+\hypertarget{var_8h_ab32bb852908b1e1e46183cf1cd7e2716}{\index{var.\-h@{var.\-h}!Init\-\_\-archer@{Init\-\_\-archer}}
+\index{Init\-\_\-archer@{Init\-\_\-archer}!var.h@{var.\-h}}
+\subsubsection[{Init\-\_\-archer}]{\setlength{\rightskip}{0pt plus 5cm}{\bf perso} Init\-\_\-archer (
+\begin{DoxyParamCaption}
+\item[{int}]{lvl, }
+\item[{S\-D\-L\-\_\-\-Surface $\ast$}]{archer\-\_\-img\mbox{[}4\mbox{]}, }
+\item[{S\-D\-L\-\_\-\-Surface $\ast$}]{barre, }
+\item[{S\-D\-L\-\_\-\-Surface $\ast$}]{vie, }
+\item[{S\-D\-L\-\_\-\-Rect}]{slot}
+\end{DoxyParamCaption}
+)}}\label{var_8h_ab32bb852908b1e1e46183cf1cd7e2716}
+
+
+Definition at line 62 of file var.\-c.
+
+\hypertarget{var_8h_a8a0f25e5ce685539a3b4f39d45ea3eed}{\index{var.\-h@{var.\-h}!Init\-\_\-raiden@{Init\-\_\-raiden}}
+\index{Init\-\_\-raiden@{Init\-\_\-raiden}!var.h@{var.\-h}}
+\subsubsection[{Init\-\_\-raiden}]{\setlength{\rightskip}{0pt plus 5cm}{\bf hero} Init\-\_\-raiden (
+\begin{DoxyParamCaption}
+\item[{int}]{lvl}
+\end{DoxyParamCaption}
+)}}\label{var_8h_a8a0f25e5ce685539a3b4f39d45ea3eed}
+
+
+Definition at line 4 of file var.\-c.
+
+\hypertarget{var_8h_a30eff78acfea6041ce6c43177d99d72e}{\index{var.\-h@{var.\-h}!Init\-\_\-slendy@{Init\-\_\-slendy}}
+\index{Init\-\_\-slendy@{Init\-\_\-slendy}!var.h@{var.\-h}}
+\subsubsection[{Init\-\_\-slendy}]{\setlength{\rightskip}{0pt plus 5cm}{\bf hero} Init\-\_\-slendy (
+\begin{DoxyParamCaption}
+\item[{int}]{lvl}
+\end{DoxyParamCaption}
+)}}\label{var_8h_a30eff78acfea6041ce6c43177d99d72e}
+
+
+Definition at line 32 of file var.\-c.
+
+\hypertarget{var_8h_ab75d9fcf4937fd0a4c51008db684a221}{\index{var.\-h@{var.\-h}!Init\-\_\-war@{Init\-\_\-war}}
+\index{Init\-\_\-war@{Init\-\_\-war}!var.h@{var.\-h}}
+\subsubsection[{Init\-\_\-war}]{\setlength{\rightskip}{0pt plus 5cm}{\bf perso} Init\-\_\-war (
+\begin{DoxyParamCaption}
+\item[{int}]{lvl, }
+\item[{S\-D\-L\-\_\-\-Surface $\ast$}]{war\-\_\-img\mbox{[}9\mbox{]}, }
+\item[{S\-D\-L\-\_\-\-Surface $\ast$}]{barre, }
+\item[{S\-D\-L\-\_\-\-Surface $\ast$}]{vie, }
+\item[{S\-D\-L\-\_\-\-Rect}]{slot}
+\end{DoxyParamCaption}
+)}}\label{var_8h_ab75d9fcf4937fd0a4c51008db684a221}
+
+
+Definition at line 81 of file var.\-c.
+

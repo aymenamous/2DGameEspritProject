@@ -1,0 +1,357 @@
+\hypertarget{cbt_8h}{\section{cbt.\-h File Reference}
+\label{cbt_8h}\index{cbt.\-h@{cbt.\-h}}
+}
+{\ttfamily \#include \char`\"{}var.\-h\char`\"{}}\\*
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+int \hyperlink{cbt_8h_a22a565d42e6286adcb79b863d16ec642}{cbt} (int nbr\-\_\-archer, int nbr\-\_\-guerrier, S\-D\-L\-\_\-\-Surface $\ast$screen, S\-D\-L\-\_\-\-Surface $\ast$back, S\-D\-L\-\_\-\-Rect pos\-\_\-map, int $\ast$sound, int $\ast$fullscreen, int presence\-\_\-slendy, int lvl)
+\item 
+void \hyperlink{cbt_8h_aef7b97cec1db40d08012fbf29a9a3d98}{attack1} (S\-D\-L\-\_\-\-Surface $\ast$back, S\-D\-L\-\_\-\-Surface $\ast$screen, S\-D\-L\-\_\-\-Rect pos\-\_\-map, int nbr\-\_\-ennemies, int cible, \hyperlink{structhero}{hero} raiden, \hyperlink{structhero}{hero} slendy, \hyperlink{structperso}{perso} ennemy\mbox{[}nbr\-\_\-ennemies\mbox{]})
+\item 
+void \hyperlink{cbt_8h_a025d75efcf7696bd9f3669af93ec476c}{attack2} (S\-D\-L\-\_\-\-Surface $\ast$back, S\-D\-L\-\_\-\-Surface $\ast$screen, S\-D\-L\-\_\-\-Rect pos\-\_\-map, int cible, int nbr\-\_\-ennemies, \hyperlink{structhero}{hero} raiden, \hyperlink{structhero}{hero} slendy, \hyperlink{structperso}{perso} ennemy\mbox{[}nbr\-\_\-ennemies\mbox{]})
+\item 
+void \hyperlink{cbt_8h_a64d10fb137520784a85238bc6c92395a}{attack3} (S\-D\-L\-\_\-\-Surface $\ast$back, S\-D\-L\-\_\-\-Surface $\ast$screen, S\-D\-L\-\_\-\-Rect pos\-\_\-map, int nbr\-\_\-ennemies, \hyperlink{structhero}{hero} raiden, \hyperlink{structhero}{hero} slendy, \hyperlink{structperso}{perso} ennemy\mbox{[}nbr\-\_\-ennemies\mbox{]})
+\item 
+void \hyperlink{cbt_8h_acf3fb3b5450baf2d8e51f87adee6d54b}{selection} (S\-D\-L\-\_\-\-Surface $\ast$back, S\-D\-L\-\_\-\-Surface $\ast$screen, S\-D\-L\-\_\-\-Rect pos\-\_\-map, int cible, int nbr\-\_\-ennemies, \hyperlink{structperso}{perso} ennemy\mbox{[}nbr\-\_\-ennemies\mbox{]}, \hyperlink{structhero}{hero} raiden, \hyperlink{structhero}{hero} slendy)
+\item 
+void \hyperlink{cbt_8h_aec23f5309bee94453941b55f886c7be9}{attack\-\_\-archer} (S\-D\-L\-\_\-\-Surface $\ast$screen, S\-D\-L\-\_\-\-Surface $\ast$back, S\-D\-L\-\_\-\-Rect pos\-\_\-map, int nbr\-\_\-ennemies, int j, Mix\-\_\-\-Chunk $\ast$arrow\-\_\-sound, \hyperlink{structhero}{hero} raiden, \hyperlink{structhero}{hero} slendy, \hyperlink{structperso}{perso} ennemy\mbox{[}nbr\-\_\-ennemies\mbox{]})
+\item 
+void \hyperlink{cbt_8h_a7b81be8b4c5fbd80f7d3ae25b60256e8}{attack\-\_\-warrior} (S\-D\-L\-\_\-\-Surface $\ast$screen, S\-D\-L\-\_\-\-Surface $\ast$back, S\-D\-L\-\_\-\-Rect pos\-\_\-map, int nbr\-\_\-ennemies, int j, Mix\-\_\-\-Chunk $\ast$warrior\-\_\-sound, \hyperlink{structhero}{hero} raiden, \hyperlink{structhero}{hero} slendy, \hyperlink{structperso}{perso} ennemy\mbox{[}nbr\-\_\-ennemies\mbox{]})
+\item 
+void \hyperlink{cbt_8h_a544ee858da4e287c832fbe9cccadb63e}{death\-\_\-animation} (S\-D\-L\-\_\-\-Surface $\ast$back, S\-D\-L\-\_\-\-Surface $\ast$screen, S\-D\-L\-\_\-\-Rect pos\-\_\-map, int nbr\-\_\-ennemies, int cible, Mix\-\_\-\-Chunk $\ast$blood\-\_\-explosion, \hyperlink{structhero}{hero} raiden, \hyperlink{structhero}{hero} slendy, \hyperlink{structperso}{perso} ennemy\mbox{[}nbr\-\_\-ennemies\mbox{]})
+\item 
+void \hyperlink{cbt_8h_abc8ada072dc47eead64fe17395f5cc9e}{blood1\-\_\-animation} (S\-D\-L\-\_\-\-Surface $\ast$back, S\-D\-L\-\_\-\-Surface $\ast$screen, S\-D\-L\-\_\-\-Rect pos\-\_\-map, int nbr\-\_\-ennemies, int attaquant, \hyperlink{structhero}{hero} raiden, \hyperlink{structhero}{hero} slendy, \hyperlink{structperso}{perso} ennemy\mbox{[}nbr\-\_\-ennemies\mbox{]})
+\item 
+void \hyperlink{cbt_8h_a4e7042cf74e4b77fb72099ae366840db}{death\-\_\-animationhero} (S\-D\-L\-\_\-\-Surface $\ast$back, S\-D\-L\-\_\-\-Surface $\ast$screen, S\-D\-L\-\_\-\-Rect pos\-\_\-map, int nbr\-\_\-ennemies, Mix\-\_\-\-Chunk $\ast$blood\-\_\-explosion, \hyperlink{structhero}{hero} raiden, \hyperlink{structhero}{hero} slendy, \hyperlink{structperso}{perso} ennemy\mbox{[}nbr\-\_\-ennemies\mbox{]})
+\item 
+void \hyperlink{cbt_8h_aad14d26ab778c1e0ed5054a40424590f}{blood2\-\_\-animation} (S\-D\-L\-\_\-\-Surface $\ast$back, S\-D\-L\-\_\-\-Surface $\ast$screen, S\-D\-L\-\_\-\-Rect pos\-\_\-map, int nbr\-\_\-ennemies, int cible, \hyperlink{structhero}{hero} raiden, \hyperlink{structhero}{hero} slendy, \hyperlink{structperso}{perso} ennemy\mbox{[}nbr\-\_\-ennemies\mbox{]})
+\item 
+void \hyperlink{cbt_8h_a0a1212147d04d2d54db1a325144f0b8d}{blood3\-\_\-animation} (S\-D\-L\-\_\-\-Surface $\ast$back, S\-D\-L\-\_\-\-Surface $\ast$screen, S\-D\-L\-\_\-\-Rect pos\-\_\-map, int nbr\-\_\-ennemies, \hyperlink{structhero}{hero} raiden, \hyperlink{structhero}{hero} slendy, \hyperlink{structperso}{perso} ennemy\mbox{[}nbr\-\_\-ennemies\mbox{]})
+\item 
+void \hyperlink{cbt_8h_af0d54a4c5780397052b878c576879b83}{blood4\-\_\-animation} (S\-D\-L\-\_\-\-Surface $\ast$back, S\-D\-L\-\_\-\-Surface $\ast$screen, S\-D\-L\-\_\-\-Rect pos\-\_\-warrior, S\-D\-L\-\_\-\-Rect pos\-\_\-map, int nbr\-\_\-ennemies, int cible, int attaquant, \hyperlink{structhero}{hero} raiden, \hyperlink{structhero}{hero} slendy, \hyperlink{structperso}{perso} ennemy\mbox{[}nbr\-\_\-ennemies\mbox{]})
+\item 
+void \hyperlink{cbt_8h_a314415da0e4156296ed66f823426d3c4}{barre\-\_\-bliting} (S\-D\-L\-\_\-\-Surface $\ast$screen, int nbr\-\_\-ennemies, \hyperlink{structhero}{hero} raiden, \hyperlink{structhero}{hero} slendy, \hyperlink{structperso}{perso} ennemy\mbox{[}nbr\-\_\-ennemies\mbox{]})
+\item 
+void \hyperlink{cbt_8h_a50b7e854d517b3dbecbe1fb219478819}{barre\-\_\-init} (int nbr\-\_\-ennemies, \hyperlink{structperso}{perso} ennemy\mbox{[}nbr\-\_\-ennemies\mbox{]}, \hyperlink{structhero}{hero} $\ast$raiden, \hyperlink{structhero}{hero} $\ast$slendy)
+\item 
+void \hyperlink{cbt_8h_acfb5b4d49c8b7f1b514ee9e743728aaa}{affich\-\_\-degat} (S\-D\-L\-\_\-\-Surface $\ast$screen, S\-D\-L\-\_\-\-Surface $\ast$degat, int dps, S\-D\-L\-\_\-\-Rect pos, T\-T\-F\-\_\-\-Font $\ast$police)
+\item 
+void \hyperlink{cbt_8h_ab26f20b24b303a5460660a04aa999b05}{affiche\-\_\-personnnages} (S\-D\-L\-\_\-\-Surface $\ast$back, S\-D\-L\-\_\-\-Surface $\ast$screen, \hyperlink{structhero}{hero} raiden, \hyperlink{structhero}{hero} slendy, int nbr\-\_\-ennemies, \hyperlink{structperso}{perso} ennemy\mbox{[}nbr\-\_\-ennemies\mbox{]}, S\-D\-L\-\_\-\-Rect pos\-\_\-map)
+\item 
+void \hyperlink{cbt_8h_a2163cf9b012da337c4d61bdd319dadfb}{affiche\-\_\-msg} (S\-D\-L\-\_\-\-Surface $\ast$screen, T\-T\-F\-\_\-\-Font $\ast$police)
+\end{DoxyCompactItemize}
+
+
+\subsection{Function Documentation}
+\hypertarget{cbt_8h_acfb5b4d49c8b7f1b514ee9e743728aaa}{\index{cbt.\-h@{cbt.\-h}!affich\-\_\-degat@{affich\-\_\-degat}}
+\index{affich\-\_\-degat@{affich\-\_\-degat}!cbt.h@{cbt.\-h}}
+\subsubsection[{affich\-\_\-degat}]{\setlength{\rightskip}{0pt plus 5cm}void affich\-\_\-degat (
+\begin{DoxyParamCaption}
+\item[{S\-D\-L\-\_\-\-Surface $\ast$}]{screen, }
+\item[{S\-D\-L\-\_\-\-Surface $\ast$}]{degat, }
+\item[{int}]{dps, }
+\item[{S\-D\-L\-\_\-\-Rect}]{pos, }
+\item[{T\-T\-F\-\_\-\-Font $\ast$}]{police}
+\end{DoxyParamCaption}
+)}}\label{cbt_8h_acfb5b4d49c8b7f1b514ee9e743728aaa}
+
+
+Definition at line 1418 of file cbt.\-c.
+
+\hypertarget{cbt_8h_a2163cf9b012da337c4d61bdd319dadfb}{\index{cbt.\-h@{cbt.\-h}!affiche\-\_\-msg@{affiche\-\_\-msg}}
+\index{affiche\-\_\-msg@{affiche\-\_\-msg}!cbt.h@{cbt.\-h}}
+\subsubsection[{affiche\-\_\-msg}]{\setlength{\rightskip}{0pt plus 5cm}void affiche\-\_\-msg (
+\begin{DoxyParamCaption}
+\item[{S\-D\-L\-\_\-\-Surface $\ast$}]{screen, }
+\item[{T\-T\-F\-\_\-\-Font $\ast$}]{police}
+\end{DoxyParamCaption}
+)}}\label{cbt_8h_a2163cf9b012da337c4d61bdd319dadfb}
+
+
+Definition at line 1454 of file cbt.\-c.
+
+\hypertarget{cbt_8h_ab26f20b24b303a5460660a04aa999b05}{\index{cbt.\-h@{cbt.\-h}!affiche\-\_\-personnnages@{affiche\-\_\-personnnages}}
+\index{affiche\-\_\-personnnages@{affiche\-\_\-personnnages}!cbt.h@{cbt.\-h}}
+\subsubsection[{affiche\-\_\-personnnages}]{\setlength{\rightskip}{0pt plus 5cm}void affiche\-\_\-personnnages (
+\begin{DoxyParamCaption}
+\item[{S\-D\-L\-\_\-\-Surface $\ast$}]{back, }
+\item[{S\-D\-L\-\_\-\-Surface $\ast$}]{screen, }
+\item[{{\bf hero}}]{raiden, }
+\item[{{\bf hero}}]{slendy, }
+\item[{int}]{nbr\-\_\-ennemies, }
+\item[{{\bf perso}}]{ennemy\mbox{[}nbr\-\_\-ennemies\mbox{]}, }
+\item[{S\-D\-L\-\_\-\-Rect}]{pos\-\_\-map}
+\end{DoxyParamCaption}
+)}}\label{cbt_8h_ab26f20b24b303a5460660a04aa999b05}
+
+
+Definition at line 1431 of file cbt.\-c.
+
+\hypertarget{cbt_8h_aef7b97cec1db40d08012fbf29a9a3d98}{\index{cbt.\-h@{cbt.\-h}!attack1@{attack1}}
+\index{attack1@{attack1}!cbt.h@{cbt.\-h}}
+\subsubsection[{attack1}]{\setlength{\rightskip}{0pt plus 5cm}void attack1 (
+\begin{DoxyParamCaption}
+\item[{S\-D\-L\-\_\-\-Surface $\ast$}]{back, }
+\item[{S\-D\-L\-\_\-\-Surface $\ast$}]{screen, }
+\item[{S\-D\-L\-\_\-\-Rect}]{pos\-\_\-map, }
+\item[{int}]{nbr\-\_\-ennemies, }
+\item[{int}]{cible, }
+\item[{{\bf hero}}]{raiden, }
+\item[{{\bf hero}}]{slendy, }
+\item[{{\bf perso}}]{ennemy\mbox{[}nbr\-\_\-ennemies\mbox{]}}
+\end{DoxyParamCaption}
+)}}\label{cbt_8h_aef7b97cec1db40d08012fbf29a9a3d98}
+
+
+Definition at line 389 of file cbt.\-c.
+
+\hypertarget{cbt_8h_a025d75efcf7696bd9f3669af93ec476c}{\index{cbt.\-h@{cbt.\-h}!attack2@{attack2}}
+\index{attack2@{attack2}!cbt.h@{cbt.\-h}}
+\subsubsection[{attack2}]{\setlength{\rightskip}{0pt plus 5cm}void attack2 (
+\begin{DoxyParamCaption}
+\item[{S\-D\-L\-\_\-\-Surface $\ast$}]{back, }
+\item[{S\-D\-L\-\_\-\-Surface $\ast$}]{screen, }
+\item[{S\-D\-L\-\_\-\-Rect}]{pos\-\_\-map, }
+\item[{int}]{cible, }
+\item[{int}]{nbr\-\_\-ennemies, }
+\item[{{\bf hero}}]{raiden, }
+\item[{{\bf hero}}]{slendy, }
+\item[{{\bf perso}}]{ennemy\mbox{[}nbr\-\_\-ennemies\mbox{]}}
+\end{DoxyParamCaption}
+)}}\label{cbt_8h_a025d75efcf7696bd9f3669af93ec476c}
+
+
+Definition at line 508 of file cbt.\-c.
+
+\hypertarget{cbt_8h_a64d10fb137520784a85238bc6c92395a}{\index{cbt.\-h@{cbt.\-h}!attack3@{attack3}}
+\index{attack3@{attack3}!cbt.h@{cbt.\-h}}
+\subsubsection[{attack3}]{\setlength{\rightskip}{0pt plus 5cm}void attack3 (
+\begin{DoxyParamCaption}
+\item[{S\-D\-L\-\_\-\-Surface $\ast$}]{back, }
+\item[{S\-D\-L\-\_\-\-Surface $\ast$}]{screen, }
+\item[{S\-D\-L\-\_\-\-Rect}]{pos\-\_\-map, }
+\item[{int}]{nbr\-\_\-ennemies, }
+\item[{{\bf hero}}]{raiden, }
+\item[{{\bf hero}}]{slendy, }
+\item[{{\bf perso}}]{ennemy\mbox{[}nbr\-\_\-ennemies\mbox{]}}
+\end{DoxyParamCaption}
+)}}\label{cbt_8h_a64d10fb137520784a85238bc6c92395a}
+
+
+Definition at line 613 of file cbt.\-c.
+
+\hypertarget{cbt_8h_aec23f5309bee94453941b55f886c7be9}{\index{cbt.\-h@{cbt.\-h}!attack\-\_\-archer@{attack\-\_\-archer}}
+\index{attack\-\_\-archer@{attack\-\_\-archer}!cbt.h@{cbt.\-h}}
+\subsubsection[{attack\-\_\-archer}]{\setlength{\rightskip}{0pt plus 5cm}void attack\-\_\-archer (
+\begin{DoxyParamCaption}
+\item[{S\-D\-L\-\_\-\-Surface $\ast$}]{screen, }
+\item[{S\-D\-L\-\_\-\-Surface $\ast$}]{back, }
+\item[{S\-D\-L\-\_\-\-Rect}]{pos\-\_\-map, }
+\item[{int}]{nbr\-\_\-ennemies, }
+\item[{int}]{j, }
+\item[{Mix\-\_\-\-Chunk $\ast$}]{arrow\-\_\-sound, }
+\item[{{\bf hero}}]{raiden, }
+\item[{{\bf hero}}]{slendy, }
+\item[{{\bf perso}}]{ennemy\mbox{[}nbr\-\_\-ennemies\mbox{]}}
+\end{DoxyParamCaption}
+)}}\label{cbt_8h_aec23f5309bee94453941b55f886c7be9}
+
+
+Definition at line 725 of file cbt.\-c.
+
+\hypertarget{cbt_8h_a7b81be8b4c5fbd80f7d3ae25b60256e8}{\index{cbt.\-h@{cbt.\-h}!attack\-\_\-warrior@{attack\-\_\-warrior}}
+\index{attack\-\_\-warrior@{attack\-\_\-warrior}!cbt.h@{cbt.\-h}}
+\subsubsection[{attack\-\_\-warrior}]{\setlength{\rightskip}{0pt plus 5cm}void attack\-\_\-warrior (
+\begin{DoxyParamCaption}
+\item[{S\-D\-L\-\_\-\-Surface $\ast$}]{screen, }
+\item[{S\-D\-L\-\_\-\-Surface $\ast$}]{back, }
+\item[{S\-D\-L\-\_\-\-Rect}]{pos\-\_\-map, }
+\item[{int}]{nbr\-\_\-ennemies, }
+\item[{int}]{j, }
+\item[{Mix\-\_\-\-Chunk $\ast$}]{warrior\-\_\-sound, }
+\item[{{\bf hero}}]{raiden, }
+\item[{{\bf hero}}]{slendy, }
+\item[{{\bf perso}}]{ennemy\mbox{[}nbr\-\_\-ennemies\mbox{]}}
+\end{DoxyParamCaption}
+)}}\label{cbt_8h_a7b81be8b4c5fbd80f7d3ae25b60256e8}
+
+
+Definition at line 820 of file cbt.\-c.
+
+\hypertarget{cbt_8h_a314415da0e4156296ed66f823426d3c4}{\index{cbt.\-h@{cbt.\-h}!barre\-\_\-bliting@{barre\-\_\-bliting}}
+\index{barre\-\_\-bliting@{barre\-\_\-bliting}!cbt.h@{cbt.\-h}}
+\subsubsection[{barre\-\_\-bliting}]{\setlength{\rightskip}{0pt plus 5cm}void barre\-\_\-bliting (
+\begin{DoxyParamCaption}
+\item[{S\-D\-L\-\_\-\-Surface $\ast$}]{screen, }
+\item[{int}]{nbr\-\_\-ennemies, }
+\item[{{\bf hero}}]{raiden, }
+\item[{{\bf hero}}]{slendy, }
+\item[{{\bf perso}}]{ennemy\mbox{[}nbr\-\_\-ennemies\mbox{]}}
+\end{DoxyParamCaption}
+)}}\label{cbt_8h_a314415da0e4156296ed66f823426d3c4}
+
+
+Definition at line 1296 of file cbt.\-c.
+
+\hypertarget{cbt_8h_a50b7e854d517b3dbecbe1fb219478819}{\index{cbt.\-h@{cbt.\-h}!barre\-\_\-init@{barre\-\_\-init}}
+\index{barre\-\_\-init@{barre\-\_\-init}!cbt.h@{cbt.\-h}}
+\subsubsection[{barre\-\_\-init}]{\setlength{\rightskip}{0pt plus 5cm}void barre\-\_\-init (
+\begin{DoxyParamCaption}
+\item[{int}]{nbr\-\_\-ennemies, }
+\item[{{\bf perso}}]{ennemy\mbox{[}nbr\-\_\-ennemies\mbox{]}, }
+\item[{{\bf hero} $\ast$}]{raiden, }
+\item[{{\bf hero} $\ast$}]{slendy}
+\end{DoxyParamCaption}
+)}}\label{cbt_8h_a50b7e854d517b3dbecbe1fb219478819}
+
+
+Definition at line 1388 of file cbt.\-c.
+
+\hypertarget{cbt_8h_abc8ada072dc47eead64fe17395f5cc9e}{\index{cbt.\-h@{cbt.\-h}!blood1\-\_\-animation@{blood1\-\_\-animation}}
+\index{blood1\-\_\-animation@{blood1\-\_\-animation}!cbt.h@{cbt.\-h}}
+\subsubsection[{blood1\-\_\-animation}]{\setlength{\rightskip}{0pt plus 5cm}void blood1\-\_\-animation (
+\begin{DoxyParamCaption}
+\item[{S\-D\-L\-\_\-\-Surface $\ast$}]{back, }
+\item[{S\-D\-L\-\_\-\-Surface $\ast$}]{screen, }
+\item[{S\-D\-L\-\_\-\-Rect}]{pos\-\_\-map, }
+\item[{int}]{nbr\-\_\-ennemies, }
+\item[{int}]{attaquant, }
+\item[{{\bf hero}}]{raiden, }
+\item[{{\bf hero}}]{slendy, }
+\item[{{\bf perso}}]{ennemy\mbox{[}nbr\-\_\-ennemies\mbox{]}}
+\end{DoxyParamCaption}
+)}}\label{cbt_8h_abc8ada072dc47eead64fe17395f5cc9e}
+
+
+Definition at line 1018 of file cbt.\-c.
+
+\hypertarget{cbt_8h_aad14d26ab778c1e0ed5054a40424590f}{\index{cbt.\-h@{cbt.\-h}!blood2\-\_\-animation@{blood2\-\_\-animation}}
+\index{blood2\-\_\-animation@{blood2\-\_\-animation}!cbt.h@{cbt.\-h}}
+\subsubsection[{blood2\-\_\-animation}]{\setlength{\rightskip}{0pt plus 5cm}void blood2\-\_\-animation (
+\begin{DoxyParamCaption}
+\item[{S\-D\-L\-\_\-\-Surface $\ast$}]{back, }
+\item[{S\-D\-L\-\_\-\-Surface $\ast$}]{screen, }
+\item[{S\-D\-L\-\_\-\-Rect}]{pos\-\_\-map, }
+\item[{int}]{nbr\-\_\-ennemies, }
+\item[{int}]{cible, }
+\item[{{\bf hero}}]{raiden, }
+\item[{{\bf hero}}]{slendy, }
+\item[{{\bf perso}}]{ennemy\mbox{[}nbr\-\_\-ennemies\mbox{]}}
+\end{DoxyParamCaption}
+)}}\label{cbt_8h_aad14d26ab778c1e0ed5054a40424590f}
+
+
+Definition at line 1135 of file cbt.\-c.
+
+\hypertarget{cbt_8h_a0a1212147d04d2d54db1a325144f0b8d}{\index{cbt.\-h@{cbt.\-h}!blood3\-\_\-animation@{blood3\-\_\-animation}}
+\index{blood3\-\_\-animation@{blood3\-\_\-animation}!cbt.h@{cbt.\-h}}
+\subsubsection[{blood3\-\_\-animation}]{\setlength{\rightskip}{0pt plus 5cm}void blood3\-\_\-animation (
+\begin{DoxyParamCaption}
+\item[{S\-D\-L\-\_\-\-Surface $\ast$}]{back, }
+\item[{S\-D\-L\-\_\-\-Surface $\ast$}]{screen, }
+\item[{S\-D\-L\-\_\-\-Rect}]{pos\-\_\-map, }
+\item[{int}]{nbr\-\_\-ennemies, }
+\item[{{\bf hero}}]{raiden, }
+\item[{{\bf hero}}]{slendy, }
+\item[{{\bf perso}}]{ennemy\mbox{[}nbr\-\_\-ennemies\mbox{]}}
+\end{DoxyParamCaption}
+)}}\label{cbt_8h_a0a1212147d04d2d54db1a325144f0b8d}
+
+
+Definition at line 1196 of file cbt.\-c.
+
+\hypertarget{cbt_8h_af0d54a4c5780397052b878c576879b83}{\index{cbt.\-h@{cbt.\-h}!blood4\-\_\-animation@{blood4\-\_\-animation}}
+\index{blood4\-\_\-animation@{blood4\-\_\-animation}!cbt.h@{cbt.\-h}}
+\subsubsection[{blood4\-\_\-animation}]{\setlength{\rightskip}{0pt plus 5cm}void blood4\-\_\-animation (
+\begin{DoxyParamCaption}
+\item[{S\-D\-L\-\_\-\-Surface $\ast$}]{back, }
+\item[{S\-D\-L\-\_\-\-Surface $\ast$}]{screen, }
+\item[{S\-D\-L\-\_\-\-Rect}]{pos\-\_\-warrior, }
+\item[{S\-D\-L\-\_\-\-Rect}]{pos\-\_\-map, }
+\item[{int}]{nbr\-\_\-ennemies, }
+\item[{int}]{cible, }
+\item[{int}]{attaquant, }
+\item[{{\bf hero}}]{raiden, }
+\item[{{\bf hero}}]{slendy, }
+\item[{{\bf perso}}]{ennemy\mbox{[}nbr\-\_\-ennemies\mbox{]}}
+\end{DoxyParamCaption}
+)}}\label{cbt_8h_af0d54a4c5780397052b878c576879b83}
+
+
+Definition at line 1246 of file cbt.\-c.
+
+\hypertarget{cbt_8h_a22a565d42e6286adcb79b863d16ec642}{\index{cbt.\-h@{cbt.\-h}!cbt@{cbt}}
+\index{cbt@{cbt}!cbt.h@{cbt.\-h}}
+\subsubsection[{cbt}]{\setlength{\rightskip}{0pt plus 5cm}int cbt (
+\begin{DoxyParamCaption}
+\item[{int}]{nbr\-\_\-archer, }
+\item[{int}]{nbr\-\_\-guerrier, }
+\item[{S\-D\-L\-\_\-\-Surface $\ast$}]{screen, }
+\item[{S\-D\-L\-\_\-\-Surface $\ast$}]{back, }
+\item[{S\-D\-L\-\_\-\-Rect}]{pos\-\_\-map, }
+\item[{int $\ast$}]{sound, }
+\item[{int $\ast$}]{fullscreen, }
+\item[{int}]{presence\-\_\-slendy, }
+\item[{int}]{lvl}
+\end{DoxyParamCaption}
+)}}\label{cbt_8h_a22a565d42e6286adcb79b863d16ec642}
+
+
+Definition at line 5 of file cbt.\-c.
+
+\hypertarget{cbt_8h_a544ee858da4e287c832fbe9cccadb63e}{\index{cbt.\-h@{cbt.\-h}!death\-\_\-animation@{death\-\_\-animation}}
+\index{death\-\_\-animation@{death\-\_\-animation}!cbt.h@{cbt.\-h}}
+\subsubsection[{death\-\_\-animation}]{\setlength{\rightskip}{0pt plus 5cm}void death\-\_\-animation (
+\begin{DoxyParamCaption}
+\item[{S\-D\-L\-\_\-\-Surface $\ast$}]{back, }
+\item[{S\-D\-L\-\_\-\-Surface $\ast$}]{screen, }
+\item[{S\-D\-L\-\_\-\-Rect}]{pos\-\_\-map, }
+\item[{int}]{nbr\-\_\-ennemies, }
+\item[{int}]{cible, }
+\item[{Mix\-\_\-\-Chunk $\ast$}]{blood\-\_\-explosion, }
+\item[{{\bf hero}}]{raiden, }
+\item[{{\bf hero}}]{slendy, }
+\item[{{\bf perso}}]{ennemy\mbox{[}nbr\-\_\-ennemies\mbox{]}}
+\end{DoxyParamCaption}
+)}}\label{cbt_8h_a544ee858da4e287c832fbe9cccadb63e}
+
+
+Definition at line 944 of file cbt.\-c.
+
+\hypertarget{cbt_8h_a4e7042cf74e4b77fb72099ae366840db}{\index{cbt.\-h@{cbt.\-h}!death\-\_\-animationhero@{death\-\_\-animationhero}}
+\index{death\-\_\-animationhero@{death\-\_\-animationhero}!cbt.h@{cbt.\-h}}
+\subsubsection[{death\-\_\-animationhero}]{\setlength{\rightskip}{0pt plus 5cm}void death\-\_\-animationhero (
+\begin{DoxyParamCaption}
+\item[{S\-D\-L\-\_\-\-Surface $\ast$}]{back, }
+\item[{S\-D\-L\-\_\-\-Surface $\ast$}]{screen, }
+\item[{S\-D\-L\-\_\-\-Rect}]{pos\-\_\-map, }
+\item[{int}]{nbr\-\_\-ennemies, }
+\item[{Mix\-\_\-\-Chunk $\ast$}]{blood\-\_\-explosion, }
+\item[{{\bf hero}}]{raiden, }
+\item[{{\bf hero}}]{slendy, }
+\item[{{\bf perso}}]{ennemy\mbox{[}nbr\-\_\-ennemies\mbox{]}}
+\end{DoxyParamCaption}
+)}}\label{cbt_8h_a4e7042cf74e4b77fb72099ae366840db}
+
+
+Definition at line 1083 of file cbt.\-c.
+
+\hypertarget{cbt_8h_acf3fb3b5450baf2d8e51f87adee6d54b}{\index{cbt.\-h@{cbt.\-h}!selection@{selection}}
+\index{selection@{selection}!cbt.h@{cbt.\-h}}
+\subsubsection[{selection}]{\setlength{\rightskip}{0pt plus 5cm}void selection (
+\begin{DoxyParamCaption}
+\item[{S\-D\-L\-\_\-\-Surface $\ast$}]{back, }
+\item[{S\-D\-L\-\_\-\-Surface $\ast$}]{screen, }
+\item[{S\-D\-L\-\_\-\-Rect}]{pos\-\_\-map, }
+\item[{int}]{cible, }
+\item[{int}]{nbr\-\_\-ennemies, }
+\item[{{\bf perso}}]{ennemy\mbox{[}nbr\-\_\-ennemies\mbox{]}, }
+\item[{{\bf hero}}]{raiden, }
+\item[{{\bf hero}}]{slendy}
+\end{DoxyParamCaption}
+)}}\label{cbt_8h_acf3fb3b5450baf2d8e51f87adee6d54b}
+
+
+Definition at line 678 of file cbt.\-c.
+

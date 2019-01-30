@@ -1,0 +1,110 @@
+\hypertarget{mouvement_8c}{\section{mouvement.\-c File Reference}
+\label{mouvement_8c}\index{mouvement.\-c@{mouvement.\-c}}
+}
+{\ttfamily \#include \char`\"{}mouvement.\-h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}var.\-h\char`\"{}}\\*
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{mouvement_8c_aea2c6caeebb11faa041a24b838031c8e}{mvt\-\_\-droite} (int $\ast$droite, S\-D\-L\-\_\-\-Rect $\ast$pos\-\_\-map, int limite, S\-D\-L\-\_\-\-Rect $\ast$pos, int y, S\-D\-L\-\_\-\-Surface $\ast$back, S\-D\-L\-\_\-\-Surface $\ast$screen, S\-D\-L\-\_\-\-Surface $\ast$a, int $\ast$i)
+\item 
+void \hyperlink{mouvement_8c_ac66f1ff473940b4daccb0539bb24d36c}{mvt\-\_\-gauche} (int $\ast$droite, S\-D\-L\-\_\-\-Rect $\ast$pos\-\_\-map, int limite, S\-D\-L\-\_\-\-Rect $\ast$pos, int y, S\-D\-L\-\_\-\-Surface $\ast$back, S\-D\-L\-\_\-\-Surface $\ast$screen, S\-D\-L\-\_\-\-Surface $\ast$a, int $\ast$i)
+\item 
+void \hyperlink{mouvement_8c_ac20e128291f23025107e28f946e3b8da}{mvt\-\_\-haut} (S\-D\-L\-\_\-\-Rect pos\-\_\-map, S\-D\-L\-\_\-\-Rect $\ast$pos, int y, S\-D\-L\-\_\-\-Surface $\ast$back, S\-D\-L\-\_\-\-Surface $\ast$screen, S\-D\-L\-\_\-\-Surface $\ast$a, S\-D\-L\-\_\-\-Surface $\ast$c, int $\ast$i, int droite)
+\item 
+void \hyperlink{mouvement_8c_afa4d9df9fa29c88ac6a5917779ccd684}{mvt\-\_\-bas} (S\-D\-L\-\_\-\-Rect pos\-\_\-map, S\-D\-L\-\_\-\-Rect $\ast$pos, int y, S\-D\-L\-\_\-\-Surface $\ast$back, S\-D\-L\-\_\-\-Surface $\ast$screen, S\-D\-L\-\_\-\-Surface $\ast$a, S\-D\-L\-\_\-\-Surface $\ast$c, int $\ast$i, int droite)
+\item 
+void \hyperlink{mouvement_8c_ae394f5e17b676b5f4ee4b0e11f729503}{boucle} (int vitesse, int $\ast$actuel, int $\ast$precedent)
+\end{DoxyCompactItemize}
+
+
+\subsection{Function Documentation}
+\hypertarget{mouvement_8c_ae394f5e17b676b5f4ee4b0e11f729503}{\index{mouvement.\-c@{mouvement.\-c}!boucle@{boucle}}
+\index{boucle@{boucle}!mouvement.c@{mouvement.\-c}}
+\subsubsection[{boucle}]{\setlength{\rightskip}{0pt plus 5cm}void boucle (
+\begin{DoxyParamCaption}
+\item[{int}]{vitesse, }
+\item[{int $\ast$}]{actuel, }
+\item[{int $\ast$}]{precedent}
+\end{DoxyParamCaption}
+)}}\label{mouvement_8c_ae394f5e17b676b5f4ee4b0e11f729503}
+
+
+Definition at line 117 of file mouvement.\-c.
+
+\hypertarget{mouvement_8c_afa4d9df9fa29c88ac6a5917779ccd684}{\index{mouvement.\-c@{mouvement.\-c}!mvt\-\_\-bas@{mvt\-\_\-bas}}
+\index{mvt\-\_\-bas@{mvt\-\_\-bas}!mouvement.c@{mouvement.\-c}}
+\subsubsection[{mvt\-\_\-bas}]{\setlength{\rightskip}{0pt plus 5cm}void mvt\-\_\-bas (
+\begin{DoxyParamCaption}
+\item[{S\-D\-L\-\_\-\-Rect}]{pos\-\_\-map, }
+\item[{S\-D\-L\-\_\-\-Rect $\ast$}]{pos, }
+\item[{int}]{y, }
+\item[{S\-D\-L\-\_\-\-Surface $\ast$}]{back, }
+\item[{S\-D\-L\-\_\-\-Surface $\ast$}]{screen, }
+\item[{S\-D\-L\-\_\-\-Surface $\ast$}]{a, }
+\item[{S\-D\-L\-\_\-\-Surface $\ast$}]{c, }
+\item[{int $\ast$}]{i, }
+\item[{int}]{droite}
+\end{DoxyParamCaption}
+)}}\label{mouvement_8c_afa4d9df9fa29c88ac6a5917779ccd684}
+
+
+Definition at line 87 of file mouvement.\-c.
+
+\hypertarget{mouvement_8c_aea2c6caeebb11faa041a24b838031c8e}{\index{mouvement.\-c@{mouvement.\-c}!mvt\-\_\-droite@{mvt\-\_\-droite}}
+\index{mvt\-\_\-droite@{mvt\-\_\-droite}!mouvement.c@{mouvement.\-c}}
+\subsubsection[{mvt\-\_\-droite}]{\setlength{\rightskip}{0pt plus 5cm}void mvt\-\_\-droite (
+\begin{DoxyParamCaption}
+\item[{int $\ast$}]{droite, }
+\item[{S\-D\-L\-\_\-\-Rect $\ast$}]{pos\-\_\-map, }
+\item[{int}]{limite, }
+\item[{S\-D\-L\-\_\-\-Rect $\ast$}]{pos, }
+\item[{int}]{y, }
+\item[{S\-D\-L\-\_\-\-Surface $\ast$}]{back, }
+\item[{S\-D\-L\-\_\-\-Surface $\ast$}]{screen, }
+\item[{S\-D\-L\-\_\-\-Surface $\ast$}]{a, }
+\item[{int $\ast$}]{i}
+\end{DoxyParamCaption}
+)}}\label{mouvement_8c_aea2c6caeebb11faa041a24b838031c8e}
+
+
+Definition at line 4 of file mouvement.\-c.
+
+\hypertarget{mouvement_8c_ac66f1ff473940b4daccb0539bb24d36c}{\index{mouvement.\-c@{mouvement.\-c}!mvt\-\_\-gauche@{mvt\-\_\-gauche}}
+\index{mvt\-\_\-gauche@{mvt\-\_\-gauche}!mouvement.c@{mouvement.\-c}}
+\subsubsection[{mvt\-\_\-gauche}]{\setlength{\rightskip}{0pt plus 5cm}void mvt\-\_\-gauche (
+\begin{DoxyParamCaption}
+\item[{int $\ast$}]{droite, }
+\item[{S\-D\-L\-\_\-\-Rect $\ast$}]{pos\-\_\-map, }
+\item[{int}]{limite, }
+\item[{S\-D\-L\-\_\-\-Rect $\ast$}]{pos, }
+\item[{int}]{y, }
+\item[{S\-D\-L\-\_\-\-Surface $\ast$}]{back, }
+\item[{S\-D\-L\-\_\-\-Surface $\ast$}]{screen, }
+\item[{S\-D\-L\-\_\-\-Surface $\ast$}]{a, }
+\item[{int $\ast$}]{i}
+\end{DoxyParamCaption}
+)}}\label{mouvement_8c_ac66f1ff473940b4daccb0539bb24d36c}
+
+
+Definition at line 30 of file mouvement.\-c.
+
+\hypertarget{mouvement_8c_ac20e128291f23025107e28f946e3b8da}{\index{mouvement.\-c@{mouvement.\-c}!mvt\-\_\-haut@{mvt\-\_\-haut}}
+\index{mvt\-\_\-haut@{mvt\-\_\-haut}!mouvement.c@{mouvement.\-c}}
+\subsubsection[{mvt\-\_\-haut}]{\setlength{\rightskip}{0pt plus 5cm}void mvt\-\_\-haut (
+\begin{DoxyParamCaption}
+\item[{S\-D\-L\-\_\-\-Rect}]{pos\-\_\-map, }
+\item[{S\-D\-L\-\_\-\-Rect $\ast$}]{pos, }
+\item[{int}]{y, }
+\item[{S\-D\-L\-\_\-\-Surface $\ast$}]{back, }
+\item[{S\-D\-L\-\_\-\-Surface $\ast$}]{screen, }
+\item[{S\-D\-L\-\_\-\-Surface $\ast$}]{a, }
+\item[{S\-D\-L\-\_\-\-Surface $\ast$}]{c, }
+\item[{int $\ast$}]{i, }
+\item[{int}]{droite}
+\end{DoxyParamCaption}
+)}}\label{mouvement_8c_ac20e128291f23025107e28f946e3b8da}
+
+
+Definition at line 57 of file mouvement.\-c.
+

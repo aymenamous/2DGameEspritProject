@@ -1,0 +1,209 @@
+#include "mouvement.h"
+
+void mvt(SDL_Surface *screen)
+{
+	SDL_Surface *back=NULL,*mvt[14]={NULL},*mvtg[14]={NULL};
+	int continuer=1,i=0,x=70,precedent=0,actuel=0,y=10,droite=1,limite=1500;
+	SDL_Event event;
+	SDL_Rect pos, pos_map;
+
+
+	back=IMG_Load("Untitled-1.png");
+	mvt[0]=IMG_Load("mouvement droite 0.png");
+	mvt[1]=IMG_Load("mouvement droite 1.png");
+	mvt[2]=IMG_Load("mouvement droite 2.png");
+	mvt[3]=IMG_Load("mouvement droite 3.png");
+	mvt[4]=IMG_Load("mouvement droite 4.png");
+	mvt[5]=IMG_Load("mouvement droite 5.png");
+	mvt[6]=IMG_Load("mouvement droite 6.png");
+	mvt[7]=IMG_Load("mouvement droite 0.png");
+	mvt[8]=IMG_Load("mouvement droite 8.png");
+	mvt[9]=IMG_Load("mouvement droite 9.png");
+	mvt[10]=IMG_Load("mouvement droite 10.png");
+	mvt[11]=IMG_Load("mouvement droite 11.png");
+	mvt[12]=IMG_Load("mouvement droite 12.png");
+	mvt[13]=IMG_Load("mouvement droite 13.png");
+	mvtg[0]=IMG_Load("mouvement gauche 0.png");
+	mvtg[1]=IMG_Load("mouvement gauche 1.png");
+	mvtg[2]=IMG_Load("mouvement gauche 2.png");
+	mvtg[3]=IMG_Load("mouvement gauche 3.png");
+	mvtg[4]=IMG_Load("mouvement gauche 4.png");
+	mvtg[5]=IMG_Load("mouvement gauche5.png");
+	mvtg[6]=IMG_Load("mouvement gauche6.png");
+	mvtg[7]=IMG_Load("mouvement gauche 0.png");
+	mvtg[8]=IMG_Load("mouvement gauche8.png");
+	mvtg[9]=IMG_Load("mouvement gauche9.png");
+	mvtg[10]=IMG_Load("mouvement gauche10.png");
+	mvtg[11]=IMG_Load("mouvement gauche11.png");
+	mvtg[12]=IMG_Load("mouvement gauche12.png");
+	mvtg[13]=IMG_Load("mouvement gauche13.png");
+
+	pos_map.x=0;
+	pos_map.y=0;
+	pos.x=0;
+	pos.y=0;
+	SDL_BlitSurface(back,NULL,screen,NULL);
+	SDL_BlitSurface(mvt[0],NULL,screen,NULL);
+	SDL_Flip(screen);
+	
+	do
+	{
+		SDL_PollEvent(&event);
+		if (event.type==SDL_QUIT || event.key.keysym.sym==SDLK_ESCAPE)
+		{
+			continuer=0;
+		}
+		if (event.type==SDL_KEYDOWN && event.key.keysym.sym==SDLK_RIGHT)
+		{
+			droite=1;
+			if (pos_map.x==limite-1280)
+			{
+				if (pos.x>-1280+261)
+				{
+					pos.x=pos.x-y;
+				}
+			}
+			else
+			{
+				pos_map.x=pos_map.x+y;
+			}
+			SDL_BlitSurface(back,&pos_map,screen,NULL);
+			SDL_BlitSurface(mvt[i],&pos,screen,NULL);
+			SDL_Flip(screen);
+			i++;
+			do
+			{
+				actuel=SDL_GetTicks();
+			}
+			while (actuel-precedent<70);
+			precedent=actuel;
+			if (i==14)
+			{
+				i=0;
+			}
+		}
+		if (event.type==SDL_KEYDOWN && event.key.keysym.sym==SDLK_LEFT)
+		{
+			droite=0;
+			if (pos_map.x==0)
+			{
+				if (pos.x<70)
+				{
+					pos.x=pos.x+y;
+				}
+			}
+			else 
+			{
+				pos_map.x=pos_map.x-y;
+			}
+			SDL_BlitSurface(back,&pos_map,screen,NULL);
+			SDL_BlitSurface(mvtg[i],&pos,screen,NULL);
+			SDL_Flip(screen);
+			i++;
+			do
+			{
+				actuel=SDL_GetTicks();
+			}
+			while (actuel-precedent<70);
+			precedent=actuel;
+			if (i==14)
+			{
+				i=0;
+			}
+		}
+		else if (event.type==SDL_KEYDOWN && event.key.keysym.sym==SDLK_UP && droite==1)
+		{
+			if (pos.y<20)
+			{
+				pos.y=pos.y+y;
+			}
+			SDL_BlitSurface(back,&pos_map,screen,NULL);
+			SDL_BlitSurface(mvt[i],&pos,screen,NULL);
+			SDL_Flip(screen);
+			i++;
+			do
+			{
+				actuel=SDL_GetTicks();
+			}
+			while (actuel-precedent<70);
+			precedent=actuel;
+			if (i==14)
+			{
+				i=0;
+			}
+		}
+		else if (event.type==SDL_KEYDOWN && event.key.keysym.sym==SDLK_DOWN && droite==1)
+		{
+			if (pos.y>-180)
+		    {
+		    	pos.y=pos.y-y;
+		    }
+			SDL_BlitSurface(back,&pos_map,screen,NULL);
+			SDL_BlitSurface(mvt[i],&pos,screen,NULL);
+			SDL_Flip(screen);
+			i++;
+			do
+			{
+				actuel=SDL_GetTicks();
+			}
+			while (actuel-precedent<70);
+			precedent=actuel;
+			if (i==14)
+			{
+				i=0;
+			}
+		}
+		if (event.type==SDL_KEYDOWN && event.key.keysym.sym==SDLK_UP && droite==0)
+		{
+			if (pos.y<20)
+			{
+				pos.y=pos.y+y;
+			}
+			SDL_BlitSurface(back,&pos_map,screen,NULL);
+			SDL_BlitSurface(mvtg[i],&pos,screen,NULL);
+			SDL_Flip(screen);
+			i++;
+			do
+			{
+				actuel=SDL_GetTicks();
+			}
+			while (actuel-precedent<70);
+			precedent=actuel;
+			if (i==14)
+			{
+				i=0;
+			}
+		}
+		if (event.type==SDL_KEYDOWN && event.key.keysym.sym==SDLK_DOWN && droite==0)
+		{
+			if (pos.y>-180)
+		    {
+		    	pos.y=pos.y-y;
+		    }
+			SDL_BlitSurface(back,&pos_map,screen,NULL);
+			SDL_BlitSurface(mvtg[i],&pos,screen,NULL);
+			SDL_Flip(screen);
+			i++;
+			do
+			{
+				actuel=SDL_GetTicks();
+			}
+			while (actuel-precedent<70);
+			precedent=actuel;
+			if (i==14)
+			{
+				i=0;
+			}
+		}
+	}
+	while (continuer==1);
+
+	//liberation
+	SDL_FreeSurface(back);
+	for (i=0;i<14;i++)
+	{
+		SDL_FreeSurface(mvt[i]);
+		SDL_FreeSurface(mvtg[i]);
+	}	
+	SDL_Quit();
+}

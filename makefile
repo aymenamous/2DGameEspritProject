@@ -1,0 +1,18 @@
+prog:Main.o cbt.o var.o lvl1.o mouvement.o menu.o
+	gcc Main.o cbt.o var.o lvl1.o mouvement.o menu.o  -lSDL -lSDL_mixer -lSDL_image -lSDL_ttf  -o prog
+Main.o:Main.c
+	gcc -c Main.c
+cbt.o:cbt.c
+	gcc -c cbt.c
+var.o:var.c
+	gcc -c var.c
+lvl1.o:lvl1.c
+	gcc -c lvl1.c
+mouvement.o:mouvement.c
+	gcc -c mouvement.c
+menu.o:menu.c
+	gcc -c menu.c
+
+
+
+

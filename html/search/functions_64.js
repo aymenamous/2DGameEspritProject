@@ -1,0 +1,5 @@
+var searchData=
+[
+  ['death_5fanimation',['death_animation',['../cbt_8c.html#a544ee858da4e287c832fbe9cccadb63e',1,'death_animation(SDL_Surface *back, SDL_Surface *screen, SDL_Rect pos_map, int nbr_ennemies, int cible, Mix_Chunk *blood_explosion, hero raiden, hero slendy, perso ennemy[nbr_ennemies]):&#160;cbt.c'],['../cbt_8h.html#a544ee858da4e287c832fbe9cccadb63e',1,'death_animation(SDL_Surface *back, SDL_Surface *screen, SDL_Rect pos_map, int nbr_ennemies, int cible, Mix_Chunk *blood_explosion, hero raiden, hero slendy, perso ennemy[nbr_ennemies]):&#160;cbt.c']]],
+  ['death_5fanimationhero',['death_animationhero',['../cbt_8c.html#a4e7042cf74e4b77fb72099ae366840db',1,'death_animationhero(SDL_Surface *back, SDL_Surface *screen, SDL_Rect pos_map, int nbr_ennemies, Mix_Chunk *blood_explosion, hero raiden, hero slendy, perso ennemy[nbr_ennemies]):&#160;cbt.c'],['../cbt_8h.html#a4e7042cf74e4b77fb72099ae366840db',1,'death_animationhero(SDL_Surface *back, SDL_Surface *screen, SDL_Rect pos_map, int nbr_ennemies, Mix_Chunk *blood_explosion, hero raiden, hero slendy, perso ennemy[nbr_ennemies]):&#160;cbt.c']]]
+];
